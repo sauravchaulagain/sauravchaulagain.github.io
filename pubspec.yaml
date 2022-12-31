@@ -41,8 +41,10 @@ dependencies:
   scroll_navigation: ^1.3.2
   dio: ^4.0.6
   path_provider: ^2.0.11
-  font_awesome_flutter: ^10.2.1
-  url_launcher: ^6.1.6
+  font_awesome_flutter: ^10.3.0
+  url_launcher: ^6.1.7
+  flutter_staggered_grid_view: ^0.6.2
+  scrollable_positioned_list: any
 
 dev_dependencies:
   flutter_test:

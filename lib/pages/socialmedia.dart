@@ -9,35 +9,15 @@ class SocialMediaHome extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(45),
-          border: Border.all(color: Colors.black, width: 2)),
-      width: size.width * 0.2,
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          mainAxisSize: MainAxisSize.max,
-          children: [
-            IconButton(
-                onPressed: () async {
-                  const url =
-                      'https://www.facebook.com/profile.php?id=100082619644241';
-                  if (await canLaunch(url)) {
-                    await launch(url);
-                  } else {
-                    throw 'Could not launch $url';
-                  }
-                },
-                icon: Icon(
-                  FontAwesomeIcons.facebook,
-                  size: 30,
-                  color: Colors.purpleAccent,
-                )),
-            SizedBox(height: 20),
-            IconButton(
+      width: size.width * 0.4,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          IconButton(
               onPressed: () async {
-                const url = 'https://github.com/sauravchaulagain';
+                const url =
+                    'https://www.facebook.com/profile.php?id=100082619644241';
                 if (await canLaunch(url)) {
                   await launch(url);
                 } else {
@@ -45,29 +25,44 @@ class SocialMediaHome extends StatelessWidget {
                 }
               },
               icon: Icon(
-                FontAwesomeIcons.github,
-                size: 30,
-                color: Colors.white,
-              ),
+                FontAwesomeIcons.facebook,
+                size: 40,
+                color: Colors.black54,
+              )),
+          SizedBox(height: 20),
+          IconButton(
+            onPressed: () async {
+              const url = 'https://github.com/sauravchaulagain';
+              if (await canLaunch(url)) {
+                await launch(url);
+              } else {
+                throw 'Could not launch $url';
+              }
+            },
+            icon: Icon(
+              FontAwesomeIcons.github,
+              size: 40,
+              color: Colors.black54,
             ),
-            SizedBox(height: 20),
-            IconButton(
-                onPressed: () async {
-                  const url =
-                      'https://www.linkedin.com/in/saurav-chaulagain-500502254/';
-                  if (await canLaunch(url)) {
-                    await launch(url);
-                  } else {
-                    throw 'Could not launch $url';
-                  }
-                },
-                icon: Icon(
-                  FontAwesomeIcons.linkedin,
-                  size: 30,
-                  color: Colors.white,
-                )),
-          ],
-        ),
+          ),
+          SizedBox(height: 20),
+          IconButton(
+              onPressed: () async {
+                const url =
+                    'https://www.linkedin.com/in/saurav-chaulagain-500502254/';
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Could not launch $url';
+                }
+              },
+              icon: Icon(
+                FontAwesomeIcons.linkedin,
+                size: 40,
+                color: Colors.black54,
+              )),
+          SizedBox(height: size.height * 0.1),
+        ],
       ),
     );
   }
