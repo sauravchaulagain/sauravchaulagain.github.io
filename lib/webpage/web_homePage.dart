@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:saurav_website/newpage/homescreen.dart';
-import 'package:saurav_website/newpage/project.dart';
-import 'package:saurav_website/newpage/resumee.dart';
-import 'package:saurav_website/newpage/tabbar.dart';
+import 'package:saurav_website/webpage/web_homescreen.dart';
+import 'package:saurav_website/webpage/web_project.dart';
+import 'package:saurav_website/webpage/web_resumee.dart';
+import 'package:saurav_website/webpage/web_tabbar.dart';
 
-import 'about.dart';
-import 'contact.dart';
-import 'finalpage.dart';
+import 'web_about.dart';
+import 'web_contact.dart';
+import 'web_endingpage.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -26,10 +26,10 @@ class HomePage extends StatelessWidget {
                   horizontal: size.aspectRatio * 70),
               child: Column(
                 children: [
-                  AboutMe(),
+                  WebAboutMe(),
                   Project(),
                   Resumee(),
-                  Contact(),
+                  WebContact(),
                 ],
               ),
             ),

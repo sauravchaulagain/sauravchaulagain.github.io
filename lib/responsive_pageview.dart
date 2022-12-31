@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:saurav_website/newpage/homePage.dart';
-
-import 'mobileview/mobilepage.dart';
+import 'package:saurav_website/mobileview/mobile_homePage.dart';
+import 'package:saurav_website/webpage/web_homePage.dart';
 
 class ResponsivePageView extends StatelessWidget {
   final mobileBody;
@@ -13,7 +12,7 @@ class ResponsivePageView extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
       if (constraints.maxWidth < 600) {
-        return MobilePage();
+        return MobileHomePage();
       } else {
         return HomePage();
       }

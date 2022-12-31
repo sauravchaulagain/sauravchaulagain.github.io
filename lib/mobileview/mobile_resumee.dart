@@ -1,48 +1,50 @@
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
 
-class MobileResume extends StatelessWidget {
-  const MobileResume({Key? key}) : super(key: key);
+class MobileResumee extends StatelessWidget {
+  const MobileResumee({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      height: size.height * 1,
+      height: size.height * 0.7,
+      width: double.infinity,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            "RESUME",
+            "Resume",
             style: TextStyle(
               fontFamily: 'hello',
-              fontSize: 38,
+              fontSize: size.aspectRatio * 60,
               fontWeight: FontWeight.w500,
               color: Colors.deepOrange,
             ),
           ),
           Text(
             'Take a look at my Resume .The resume is developed using PhotoShop.',
+            textAlign: TextAlign.center,
             style: TextStyle(
               fontFamily: 'hello',
-              fontSize: 14,
+              fontSize: size.aspectRatio * 30,
               fontWeight: FontWeight.w500,
               color: Colors.black26,
             ),
           ),
-          SizedBox(height: 20),
           Expanded(
             child: Center(
               child: HoverCrossFadeWidget(
-                duration: Duration(milliseconds: 300),
+                duration: Duration(milliseconds: 400),
                 firstChild: Container(
                   child: Image.asset(
                     'assets/CV_saurav.jpg',
-                    height: size.height * 0.87,
+                    height: size.height * 0.7,
                   ),
                 ),
                 secondChild: Container(
-                  height: size.height * 0.9,
+                  height: size.height * 1,
+                  width: double.infinity,
                   decoration: BoxDecoration(
                       image: DecorationImage(
                     image: AssetImage('assets/CV_saurav.jpg'),
