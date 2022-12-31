@@ -50,7 +50,7 @@ class MobileAboutMe extends StatelessWidget {
                 textAlign: TextAlign.justify,
                 style: TextStyle(
                   fontFamily: 'hello',
-                  fontSize: size.aspectRatio * 35,
+                  fontSize: size.aspectRatio * 20,
                   fontWeight: FontWeight.w400,
                   color: Colors.black,
                 ),

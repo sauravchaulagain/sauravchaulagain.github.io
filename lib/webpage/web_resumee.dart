@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
 
-class Resumee extends StatelessWidget {
-  const Resumee({Key? key}) : super(key: key);
+class WebResumee extends StatelessWidget {
+  const WebResumee({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

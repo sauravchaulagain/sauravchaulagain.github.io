@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../pages/socialmedia.dart';
 
-class EndingPage extends StatelessWidget {
-  const EndingPage({Key? key}) : super(key: key);
+class WebEndingPage extends StatelessWidget {
+  const WebEndingPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class EndingPage extends StatelessWidget {
               'Get In Touch',
               style: TextStyle(
                 fontFamily: 'hello',
-                fontSize: 40,
+                fontSize: size.aspectRatio * 20,
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
               ),
@@ -35,7 +35,7 @@ class EndingPage extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'hello',
-                  fontSize: 18,
+                  fontSize: size.aspectRatio * 9,
                   fontWeight: FontWeight.w500,
                   color: Colors.white,
                 ),
@@ -46,7 +46,7 @@ class EndingPage extends StatelessWidget {
               'Social Media',
               style: TextStyle(
                 fontFamily: 'hello',
-                fontSize: 35,
+                fontSize: size.aspectRatio * 15,
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
               ),
@@ -63,7 +63,7 @@ class EndingPage extends StatelessWidget {
                   'Name: Saurav Chaulagain',
                   style: TextStyle(
                     fontFamily: 'hello',
-                    fontSize: 18,
+                    fontSize: size.aspectRatio * 10,
                     fontWeight: FontWeight.w500,
                     color: Colors.white,
                   ),
@@ -72,7 +72,7 @@ class EndingPage extends StatelessWidget {
                   'Contact: +977 9866556708',
                   style: TextStyle(
                     fontFamily: 'hello',
-                    fontSize: 18,
+                    fontSize: size.aspectRatio * 10,
                     fontWeight: FontWeight.w500,
                     color: Colors.white,
                   ),
@@ -81,7 +81,7 @@ class EndingPage extends StatelessWidget {
                   'Email: sauravchaulagain39@gmail.com',
                   style: TextStyle(
                     fontFamily: 'hello',
-                    fontSize: 18,
+                    fontSize: size.aspectRatio * 10,
                     fontWeight: FontWeight.w500,
                     color: Colors.white,
                   ),

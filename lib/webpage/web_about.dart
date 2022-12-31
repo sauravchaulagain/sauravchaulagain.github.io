@@ -57,7 +57,7 @@ class WebAboutMe extends StatelessWidget {
                     "Hi there! My name is Saurav and I am a Flutter developer. I have a passion for creating beautiful and functional mobile apps using the Flutter framework. I am constantly learning and seeking new challenges to improve my skills and stay up-to-date with the latest technologies. I have worked on several projects where I was design and implement the front-end of the app using Flutter, as well as integrating with backend APIs and databases.\nI am excited to continue learning and growing as a developer, and I am eager to take on new challenges and contribute to the success of any team or project I am a part of.",
                     style: TextStyle(
                       fontFamily: 'hello',
-                      fontSize: 18,
+                      fontSize: size.aspectRatio * 9,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                     ),

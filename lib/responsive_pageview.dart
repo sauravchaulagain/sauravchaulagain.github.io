@@ -14,7 +14,7 @@ class ResponsivePageView extends StatelessWidget {
       if (constraints.maxWidth < 600) {
         return MobileHomePage();
       } else {
-        return HomePage();
+        return WebHomePage();
       }
     });
   }

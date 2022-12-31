@@ -34,7 +34,7 @@ class WebContact extends StatelessWidget {
                         'If Not Now, When?\nLet’s Work Together!',
                         style: TextStyle(
                           fontFamily: 'hello',
-                          fontSize: 40,
+                          fontSize: size.aspectRatio * 20,
                           fontWeight: FontWeight.w500,
                           color: Colors.deepOrange,
                         ),
@@ -43,7 +43,7 @@ class WebContact extends StatelessWidget {
                         "I specialize in Flutter development and have a passion for creating intuitive and visually appealing apps. Contact me to learn more about my services and how I can help bring your app idea to function.",
                         style: TextStyle(
                           fontFamily: 'hello',
-                          fontSize: 18,
+                          fontSize: size.aspectRatio * 9,
                           fontWeight: FontWeight.w500,
                           color: Colors.black,
                         ),
@@ -59,7 +59,7 @@ class WebContact extends StatelessWidget {
                               "Let's talk with me!\nsauravchaulagain39@gmail.com",
                               style: TextStyle(
                                 fontFamily: 'hello',
-                                fontSize: 26,
+                                fontSize: size.aspectRatio * 10,
                                 fontWeight: FontWeight.w600,
                                 color: Colors.black,
                               ),
@@ -71,11 +71,7 @@ class WebContact extends StatelessWidget {
                   ),
                 ),
               ),
-              Expanded(
-                  child: Container(
-                height: size.height * 0.6,
-                child: Text('ashhd'),
-              ))
+              Expanded(child: Container())
             ],
           ),
         ],

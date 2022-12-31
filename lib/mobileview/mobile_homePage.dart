@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:saurav_website/mobileview/web_contact.dart_contact.dart';
-import 'package:saurav_website/webpage/web_homescreen.dart';
+import 'package:saurav_website/mobileview/mobile_homescreen.dart';
 
 import 'mobile_about.dart';
+import 'mobile_contact.dart_contact.dart';
 import 'mobile_endingpage.dart';
 import 'mobile_project.dart';
 import 'mobile_resumee.dart';
@@ -34,8 +34,7 @@ class MobileHomePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            //Tabbarr(),
-            HomeScreen(),
+            MobileHomeScreen(),
             Padding(
               padding: EdgeInsets.symmetric(
                   vertical: size.aspectRatio * 30,

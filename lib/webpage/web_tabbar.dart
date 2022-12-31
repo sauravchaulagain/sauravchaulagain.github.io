@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class Tabbarr extends StatelessWidget {
-  const Tabbarr({Key? key}) : super(key: key);
+class WebTabbarr extends StatelessWidget {
+  const WebTabbarr({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

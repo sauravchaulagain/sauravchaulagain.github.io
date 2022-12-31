@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class Project extends StatelessWidget {
-  const Project({Key? key}) : super(key: key);
+class WebProject extends StatelessWidget {
+  const WebProject({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

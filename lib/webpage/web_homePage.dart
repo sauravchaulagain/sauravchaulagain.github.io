@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:saurav_website/webpage/web_about.dart';
+import 'package:saurav_website/webpage/web_contact.dart';
+import 'package:saurav_website/webpage/web_endingpage.dart';
 import 'package:saurav_website/webpage/web_homescreen.dart';
 import 'package:saurav_website/webpage/web_project.dart';
 import 'package:saurav_website/webpage/web_resumee.dart';
 import 'package:saurav_website/webpage/web_tabbar.dart';
 
-import 'web_about.dart';
-import 'web_contact.dart';
-import 'web_endingpage.dart';
-
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class WebHomePage extends StatelessWidget {
+  const WebHomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +17,8 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Tabbarr(),
-            HomeScreen(),
+            WebTabbarr(),
+            WebHomeScreen(),
             Padding(
               padding: EdgeInsets.symmetric(
                   vertical: size.aspectRatio * 30,
@@ -27,13 +26,13 @@ class HomePage extends StatelessWidget {
               child: Column(
                 children: [
                   WebAboutMe(),
-                  Project(),
-                  Resumee(),
+                  WebProject(),
+                  WebResumee(),
                   WebContact(),
                 ],
               ),
             ),
-            EndingPage()
+            WebEndingPage()
           ],
         ),
       ),
